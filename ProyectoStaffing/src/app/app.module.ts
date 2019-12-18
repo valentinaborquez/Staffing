@@ -34,6 +34,9 @@ const appRoutes: Routes = [
     ReporteStaffingComponent
   ],
   imports: [
+    RouterModule.forRoot(
+    appRoutes, 
+    {enableTracing: false}),
     BrowserModule
   ],
   providers: [],
