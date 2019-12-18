@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -18,7 +17,8 @@ const appRoutes: Routes = [
 { path : 'agregarcolaborador', component: AgregarColaboradorComponent},
 { path : 'asignarproyecto', component: AsignarProyectoComponent},
 { path : 'verproyectos', component: VerProyectosComponent},
-{ path : 'reportestaffing', component: ReporteStaffingComponent}
+{ path : 'reportestaffing', component: ReporteStaffingComponent},
+{ path: '**', redirectTo: 'login' }
 ];
   
 
@@ -34,9 +34,7 @@ const appRoutes: Routes = [
     ReporteStaffingComponent
   ],
   imports: [
-    RouterModule.forRoot(
-    appRoutes, 
-    {enableTracing: false}),
+    RouterModule.forRoot(  appRoutes, {enableTracing: false}),
     BrowserModule
   ],
   providers: [],
