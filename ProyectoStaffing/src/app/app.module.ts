@@ -13,12 +13,12 @@ import { ReporteStaffingComponent } from './components/reporte-staffing/reporte-
 
 const appRoutes: Routes = [
 { path : 'login', component: LoginComponent},
-{ path : 'AccesoColaborador', component: AccesoColaboradorComponent},
-{ path : 'AccesoAdmin', component: AccesoAdminComponent},
-{ path : 'AgregarColaborador', component: AgregarColaboradorComponent},
-{ path : 'AsignarProyecto', component: AsignarProyectoComponent},
-{ path : 'VerProyectos', component: VerProyectosComponent},
-{ path : 'ReporteStaffing', component: ReporteStaffingComponent}
+{ path : 'accesocolaborador', component: AccesoColaboradorComponent},
+{ path : 'accesoadmin', component: AccesoAdminComponent},
+{ path : 'agregarcolaborador', component: AgregarColaboradorComponent},
+{ path : 'asignarproyecto', component: AsignarProyectoComponent},
+{ path : 'verproyectos', component: VerProyectosComponent},
+{ path : 'reportestaffing', component: ReporteStaffingComponent}
 ];
   
 
