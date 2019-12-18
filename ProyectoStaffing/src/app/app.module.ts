@@ -11,7 +11,16 @@ import { AsignarProyectoComponent } from './components/asignar-proyecto/asignar-
 import { VerProyectosComponent } from './components/ver-proyectos/ver-proyectos.component';
 import { ReporteStaffingComponent } from './components/reporte-staffing/reporte-staffing.component';
 
-
+const appRoutes: Routes = [
+{ path : 'home', component: LoginComponent},
+{ path : 'AccesoCol', component: AccesoColaboradorComponent},
+{ path : 'AccesoAdmin', component: AccesoAdminComponent},
+{ path : 'AgregarCol', component: AgregarColaboradorComponent},
+{ path : 'AsignarProyectos', component: AsignarProyectoComponent},
+{ path : 'VerProyectos', component: VerProyectosComponent},
+{ path : 'ReporteStaffing', component: ReporteStaffingComponent},
+];
+  
 
 @NgModule({
   declarations: [
