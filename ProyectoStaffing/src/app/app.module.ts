@@ -18,7 +18,7 @@ const appRoutes: Routes = [
 { path : 'AgregarCol', component: AgregarColaboradorComponent},
 { path : 'AsignarProyectos', component: AsignarProyectoComponent},
 { path : 'VerProyectos', component: VerProyectosComponent},
-{ path : 'ReporteStaffing', component: ReporteStaffingComponent},
+{ path : 'ReporteStaffing', component: ReporteStaffingComponent}
 ];
   
 
@@ -34,6 +34,9 @@ const appRoutes: Routes = [
     ReporteStaffingComponent
   ],
   imports: [
+    RouterModule.forRoot(
+    appRoutes, 
+    {enableTracing: false}),
     BrowserModule
   ],
   providers: [],
