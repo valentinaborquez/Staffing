@@ -12,23 +12,27 @@
     <body>
     <ul class="nav nav-tabs bg-dark">
         <li class="nav-item">
-            <a class="nav-link active">AgregarColaborador</a>
+            <a class="nav-link active"> Registrar colaborador</a>
           </li>
         <li class="nav-item">
-          <a class="nav-link" href="/accesoadmin">PaginaPrincipal</a>
+          <a class="nav-link" href="/accesoadmin">Pagina principal</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/asignarproyecto">AsignarProyecto</a>
+          <a class="nav-link" href="/asignarproyecto">Asignar proyecto</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/verproyectos">verProyectos</a>
-          </li>
-      </ul>
+            <a class="nav-link" href="/verproyectos">Ver proyectos</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/reportestaffing">Reporte de Staffing</a>
+        </li>  
+    </ul>
       <br>
         
     <div class="container">
 
-        <h1>Agregar Colaborador</h1>
+        <h2>Registrar colaborador</h2>
         <br>
         <form>
             <div class="form-row">
@@ -45,44 +49,61 @@
                 <input type="text" class="form-control" id="nombre">
               </div>
             </div>
+
             <div class="form-group">
                 <label for="correo">Email</label>
                 <input type="email" class="form-control" id="correo" placeholder="ejemplo@ejemplo.com">
-              </div>
-              <div class="form-group">
-                <label for="contraseña">Contraseña</label>
-                <input type="password" class="form-control" id="contrasena" placeholder="*******">
-              </div>
-            <div class="form-group">
-              <label for="direccion">Dirección</label>
-              <input type="text" class="form-control" id="direccion" placeholder="calle #1234">
             </div>
+             
+        
+
             <div class="form-group">
-              <label for="comuna">Comuna</label>
-              <input type="text" class="form-control" id="comuna" placeholder="Comuna...">
+                <label for="exampleFormControlSelect2">Idiomas</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>Español</option>
+                  <option>Ingles</option>
+                  <option>Frances</option>
+                  <option>Portugues</option>
+                  <option>Mandarín</option>
+                </select>
             </div>
+
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Habilidades Tecnicas</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>Java</option>
+                  <option>Backend</option>
+                  <option>Frontend</option>
+                  <option>Java Script</option>
+                </select>
+            </div>
+
+
             <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
+                  <label for="nombre">Cargo</label>
+                  <input type="text" class="form-control" id="nombre">
+                </div>
+                
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
                     
                         <label for="inlineFormCustomSelect">Rol</label>
                         <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                           <option selected>Selecciona...</option>
-                          <option value="alumno">Alumno</option>
-                          <option value="profesor">Profesor</option> 
+                          <option value="alumno">Colaborador</option>
+                          <option value="profesor">Administrador</option> 
                         </select>
                       
                 </div>
-                <div class="form-group col-md-4">
-               
-                </div>
-                <div class="form-group col-md-2">
                 
-              </div>
             </div>
-
+  
            
-            <button type="submit" class="btn btn-primary">Registrar</button>
-          </form>
-          </div>
-    
+            <button type="submit" class="btn btn-primary">Crear perfil colaborador</button>
+        </form>
+    </div>
     </body>
