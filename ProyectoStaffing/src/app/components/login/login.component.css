@@ -1,16 +1,13 @@
-
 body {
-
-	background-image: url("/assets/img/security.jpg");
 	margin: 0;
 	padding: 0;
-	
+	background: url(http://www.vijayyadav.tk/images/Background.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
 	font-family: sans-serif;
-
 }
+
 .loginbox{
 	width: 320px;
 	height: 420px;
@@ -23,6 +20,7 @@ body {
 	box-sizing: border-box;
 	padding: 70px 30px;
 }
+
 .avatar{
 	width: 100px;
 	height: 100px;
@@ -32,6 +30,7 @@ body {
 	left: calc(50% - 50px);
 
 }
+
 h1{
 	margin: 0;
 	padding: 0 0 20px;
@@ -40,11 +39,13 @@ h1{
 
 
 }
+
 .loginbox p{
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
 }
+
 .loginbox input{
 	width: 100%;
 	margin-bottom: 20px;
