@@ -3,7 +3,13 @@ body {
            
 }
 
-
+.ListaC{
+ position: relative;
+ padding: 200px;
+ bottom: 0xp;
+ background-color: dimgray;
+ left: 100px;
+}
 .narvar{
     padding-left: 15% ;
 }
