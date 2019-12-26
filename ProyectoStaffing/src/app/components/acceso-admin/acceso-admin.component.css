@@ -1,8 +1,10 @@
 body {
     width: 100%;
     height: 100%;
-    background-image: url("/assets/img/informatica.jpg");
-    
+    background-image: url("/assets/img/pastel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 span{
