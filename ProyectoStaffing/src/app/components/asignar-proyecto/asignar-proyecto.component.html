@@ -12,7 +12,7 @@
     <ul class="nav nav-tabs bg-dark">
         <li class="nav-item">
             <a class="nav-link active"> Crear Proyecto</a>
-          </li>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="/accesoadmin">Pagina Principal</a>
         </li>
@@ -22,14 +22,12 @@
         <li class="nav-item">
             <a class="nav-link" href="/verproyectos">Ver proyectos</a>
         </li>
-
         <li class="nav-item">
             <a class="nav-link" href="/reportestaffing">Reporte de Staffing</a>
         </li>  
     </ul>
-    <br>
-
-      <form class="needs-validation" novalidate>
+       <br>
+     <form class="needs-validation" novalidate>
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label for="validationCustom01">Nombre Proyecto</label>
@@ -39,7 +37,7 @@
                 </div>
               </div>
               <div class="col-md-8 mb-3">
-                <label for="validationCustom02">Descripcion</label>
+                <label for="validationCustom02"><strong>Descripcion</strong></label>
                 <input type="text" class="form-control" id="validationCustom02" value="Se requiere crear frontend para pag web. archivo html, css y ts" required>
                 <div class="valid-feedback">
                   Looks good!
@@ -49,21 +47,21 @@
             </div>
             <div class="form-row">
               <div class="col-md-3 mb-3">
-                <label for="validationCustom03">Fecha Inicio</label>
+                <label for="validationCustom03"><strong>Fecha Inicio</strong></label>
                 <input type="text" class="form-control" id="validationCustom03" value= "02-05-2020" required>
                 <div class="invalid-feedback">
                   porfavor ingrese una fecha logica
                 </div>
               </div>
               <div class="col-md-3 mb-3">
-                <label for="validationCustom03">Fecha Final</label>
+                <label for="validationCustom03"><strong>Fecha Final</strong></label>
                 <input type="text" class="form-control" id="validationCustom03" value= "20-08-2020" required>
                 <div class="invalid-feedback">
                   porfavor ingrese una fecha logica
                 </div>
               </div>
               <div class="col-md-6 mb-3">
-                <label for="validationCustom04">Area del proyecto</label>
+                <label for="validationCustom04"><strong>Area del proyecto</strong></label>
                 <select class="custom-select" id="validationCustom04" required>
                   <option selected disabled value="">Filtro por area</option>
                   <option>Contabilidad</option>
@@ -78,11 +76,25 @@
                   ingrese un are correcta
                 </div>
               </div>
+            </div>           
+            <div clase="Lista_madre">
+               <div class="ListC">
+                  <label for="ListC"><strong>Colaboradores segun area:</strong></label>
+                 <ul class="ListC">
+                    <li><input type="checkbox" id="cbox2" value="2_checkbox"> <label for="cbox2">Molly Tumber</label></li>
+                    <li><label><input type="checkbox" id="cbox1" value="1_checkbox"> Ada Lovelace</label></li>
+                    <li><input type="checkbox" id="cbox3" value="3_checkbox"> <label for="cbox3">Palta Tomate Queso</label></li>
+                    <li><input type="checkbox" id="cbox4" value="4_checkbox"> <label for="cbox4">Maria Sangueza</label></li>
+                    <li><input type="checkbox" id="cbox5" value="5_checkbox"> <label for="cbox5">Almendra Carvajal</label></li>
+                 </ul>
+               </div>
             </div>
-            <button class="btn btn-primary" type="submit">Crear proyecto</button>
-          </form>
-          
-          <script>
+            <form action="/button-type">
+              <button class="Crear" type="button" onclick="alert('Proyecto Creado Con Exito:)!')">Crear Proyecto</button><br><br>
+              <button  type="reset" value="Reset">Borrar Todo</button><br><br>
+            </form> 
+     </form>
+     <script>
           // Example starter JavaScript for disabling form submissions if there are invalid fields
           (function() {
             'use strict';
@@ -101,19 +113,10 @@
               });
             }, false);
           })();
-          </script>
-          <div class="ListC">
-            <label for="ListC">Colaboradores segun area</label>
-            <ul class="list-group">
-              <li class="list-group-item"><input type="checkbox" id="cbox2" value="2_checkbox"> <label for="cbox2">Molly Tumber</label></li>
-              <li class="list-group-item"><label><input type="checkbox" id="cbox1" value="1_checkbox"> Ada Lovelace</label></li>
-              <li class="list-group-item"><input type="checkbox" id="cbox3" value="3_checkbox"> <label for="cbox3">Palta Tomate Queso</label></li>
-              <li class="list-group-item"><input type="checkbox" id="cbox4" value="4_checkbox"> <label for="cbox4">Maria Sangueza</label></li>
-              <li class="list-group-item"><input type="checkbox" id="cbox5" value="5_checkbox"> <label for="cbox5">Almendra Carvajal</label></li>
-            </ul>
-          </div>
+     </script>
+          
 
-  </body>
+ </body>
 
 
 

@@ -1,15 +1,22 @@
 body {
-    background-image: url("/assets/img/marmol.jpg");
-           
+    background-image: url("/assets/img/pastel.jpg");
+    background-size: auto;
 }
+.Lista_madre{
+ width: 500px;
+ height:300px;
+ background-color: darkgray;
 
-.ListaC{
- position: relative;
- padding: 200px;
- bottom: 10xp;
- background-color: dimgray;
- left: 400px;
 }
-.narvar{
-    padding-left: 15% ;
+.ListaC{
+ position: absolute;    
+ padding: 200px;
+ bottom: 0xp;
+ background-color: dimgray;
+ left: 300px;
+}
+.Crear{
+ position: relative;
+ 
+
 }
