@@ -1,22 +1,24 @@
-body {
+
+ body{
+    width: 100%;
+    height: 100%;
     background-image: url("/assets/img/pastel.jpg");
+    background-position: auto;
+    background-repeat: repeat;
     background-size: auto;
 }
-.Lista_madre{
- width: 500px;
- height:300px;
- background-color: darkgray;
 
-}
-.ListaC{
- position: absolute;    
- padding: 200px;
- bottom: 0xp;
- background-color: dimgray;
- left: 300px;
-}
-.Crear{
- position: relative;
- 
-
-}
+ button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: rgb(8, 6, 6);
+    background-color: rgb(161, 203, 219);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(102, 101, 102);
+   
+    
+  }

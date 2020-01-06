@@ -11,5 +11,5 @@ export class AsignarProyectoComponent implements OnInit {
 
   ngOnInit() {
   }
-
+ 
 }
