@@ -11,57 +11,29 @@
     <body>
     <ul class="nav nav-tabs bg-dark">
         <li class="nav-item">
-            <a class="nav-link active"> Registrar colaborador</a>
+            <a class="nav-link active"> Agregar Habilidades</a>
           </li>
         <li class="nav-item">
           <a class="nav-link" href="/accesoadmin">Pagina principal</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/asignarproyecto">Crear proyecto</a>
+          <a class="nav-link" href="/login">Salir</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/verproyectos">Ver proyectos</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="/reportestaffing">Reporte de Staffing</a>
-        </li>  
     </ul>
         
     <div class="container">
 
       <div class="form-row">
-        <div class="form-group col-md-3"> </div>
-        <div class="form-group col-md-6" style="color:azure;">
-          <h1>  Registrar colaborador</h1>
-        </div>
-        <div class="form-group col-md-3"></div>
+            <div class="form-group col-md-3"> </div>
+            <div class="form-group col-md-6" style="color:azure;">
+                <h1> Agregar Habilidades</h1>
+            </div>
+            <div class="form-group col-md-3"></div>
       </div>
 
         
         <form>
-            <div class="form-row">
-              <div class="form-group col-md-4">
-                <label for="nombre" style="color: white;">Nombre</label>
-                <input type="text" class="form-control" id="nombre">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="Apellido" style="color: white;">Apellido</label>
-                <input type="text" class="form-control" id="apellido">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="nombre" style="color: white;">Rut</label>
-                <input type="text" class="form-control" id="nombre">
-              </div>
-            </div>
-
-            <div class="form-group">
-                <label for="correo" style="color: white;">Email</label>
-                <input type="email" class="form-control" id="correo" placeholder="ejemplo@ejemplo.com">
-            </div>
-             
-        
-
+           
             <div class="form-group">
                 <label for="exampleFormControlSelect2" style="color: white;">Idiomas</label>
                 <select multiple class="form-control" id="exampleFormControlSelect2">
@@ -74,20 +46,10 @@
             </div>
 
 
-
-
             <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="nombre" style="color: white;">Cargo</label>
-                  <input type="text" class="form-control" id="nombre">
-                </div>
-                
-            </div>
-
-            <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     
-                        <label for="inlineFormCustomSelect" style="color: white;">Rol</label>
+                        <label for="inlineFormCustomSelect" style="color: white;">Habilidades Tecnicas</label>
                         <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                           <option selected>Selecciona...</option>
                           <option value="colaborador">Colaborador</option>
@@ -95,11 +57,12 @@
                         </select>
                       
                 </div>
+                <div class="form-group col-md-4">
+                    <button type="submit" class="btn btn-primary">Crear perfil colaborador</button>
+                </div>
+                <div class="form-group col-md-2"></div>
                 
             </div>
-  
-           
-            <button type="submit" class="btn btn-primary">Crear perfil colaborador</button>
         </form>
         
     </div>

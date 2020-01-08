@@ -9,6 +9,7 @@ import { AgregarColaboradorComponent } from './components/agregar-colaborador/ag
 import { AsignarProyectoComponent } from './components/asignar-proyecto/asignar-proyecto.component';
 import { VerProyectosComponent } from './components/ver-proyectos/ver-proyectos.component';
 import { ReporteStaffingComponent } from './components/reporte-staffing/reporte-staffing.component';
+import { AgregarHabilidadesComponent } from './components/agregar-habilidades/agregar-habilidades.component';
 
 const appRoutes: Routes = [
 { path : 'login', component: LoginComponent},
@@ -18,7 +19,8 @@ const appRoutes: Routes = [
 { path : 'asignarproyecto', component: AsignarProyectoComponent},
 { path : 'verproyectos', component: VerProyectosComponent},
 { path : 'reportestaffing', component: ReporteStaffingComponent},
-{ path: '**', redirectTo: 'login' }
+{ path : 'agregarhabilidades', component: AgregarHabilidadesComponent},
+{ path: '**', redirectTo: 'login' },
 ];
   
 
@@ -31,7 +33,8 @@ const appRoutes: Routes = [
     AgregarColaboradorComponent,
     AsignarProyectoComponent,
     VerProyectosComponent,
-    ReporteStaffingComponent
+    ReporteStaffingComponent,
+    AgregarHabilidadesComponent
   ],
   imports: [
     RouterModule.forRoot(  appRoutes, {enableTracing: false}),
