@@ -2,12 +2,15 @@
  body{
     width: 100%;
     height: 100%;
-    background-image: url("/assets/img/pastel.jpg");
+    background-image: url('/assets/img/fondo.jpg');
     background-position: auto;
-    background-repeat: repeat;
-    background-size: auto;
-}
-
+    background-repeat: no-repeat;
+    align-self: center;
+    
+   
+    background-size: cover;
+  }
+ 
  button {
     padding: 15px 25px;
     font-size: 24px;
@@ -22,3 +25,44 @@
    
     
   }
+ custom-area {
+   margin-right: 50px;
+  }
+  .split {
+   height: 100%;
+   width: 50%;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   overflow-x: hidden;
+   padding-top: 20px;
+ }
+ 
+ /* Control the left side */
+ .left {
+   left: 0;
+   background-image: url('/assets/img/fondo.jpg');
+   margin-top: 40px;
+ }
+ 
+ /* Control the right side */
+ .right {
+   right: 0;
+   background-image: url('/assets/img/fondo.jpg');
+   margin-top: 40px;
+ }
+ 
+ /* If you want the content centered horizontally and vertically */
+ .centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+ }
+ 
+ /* Style the image inside the centered container, if needed */
+ .centered img {
+   width: 150px;
+   border-radius: 50%;
+ }

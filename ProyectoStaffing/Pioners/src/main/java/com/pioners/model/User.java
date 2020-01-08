@@ -6,8 +6,8 @@ public class User {
     private String rut;
     private boolean disponibility;
     private  String rol;
-    private int id_adm=1;// Diferenciacion de ids colaborador y administrador
-    private int id_col=2;
+  private int id_adm;// Diferenciacion de ids colaborador y administrador
+  private int id_col;
     private String aptitudesextra;
     private String fullName;
     private String email;

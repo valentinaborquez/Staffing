@@ -33,7 +33,7 @@
    <br>
    <div class="form-row">
     <div class="col-md-4 mb-3">
-      <label for="nombre_Proyecto"><strong>Nombre Proyecto</strong></label>
+      <label for="nombre_Proyecto" style="color: white;"><strong>Nombre Proyecto</strong></label>
       <input type="text" class="nombre_Proyecto" id="nombre_Proyecto" placeholder="Creacion frontend" value="" required>
       <div class="valid-feedback">
         Looks good!
@@ -43,55 +43,134 @@
    </div>
  
   
-    <div class="form-row">
-     <div class="col-md-3 mb-3">
-      <label for="fecha_Inicio"><strong>Fecha Inicio</strong></label>
-      <input type="text" class=">fecha_Inicio" id="fecha_Inicio" placeholder="02-05-2020" value= "" required>
-     </div>
-    </div>
-    <div class="col-md-3">
-      <label for="fecha_Final"><strong>Fecha Final</strong></label>
-      <input type="text" class="fecha_Final" id="fecha_Final" placeholder="02-08-2020" value="" required>
-      <div class="invalid-feedback">
-        porfavor ingrese una fecha logica
-      </div>
-    </div>
-    <div class="col-md-6" >
-      <label for="custom_area"><strong>Area del proyecto</strong></label>
-      <select class="custom_area" id="custom_area" required>
-        <option selected disabled value="">Filtro por area</option>
-        <option>Contabilidad</option>
-        <option>Aprovicionamiento de redes</option>
-        <option>Arquitectura</option>
-        <option>Programacion</option>
-        <option>Logistica</option>
-        <option>Administracion</option>
-        <option>Otra</option>
-      </select>
-      <div class="invalid-feedback">
-        ingrese un area correcta
-      </div>
-    </div>
+
+    
+
          
          
           <div class="custom-control custom-switch">
-           
-            <ul>
-              <label for="custom-control custom-switch"><strong>Colaboradores segun area:</strong></label>
+          <ul>
+              <label for="custom-control custom-switch" style=""><strong>Colab oradores segun area:</strong></label>
               <input type="checkbox" class="custom-control-input" id="fullName">
-             <li><label class="custom-control-label" for="customSwitch1"> Ada Lovelace </label></li>
-             <li><label class="custom-control-label1" for="customSwitch2"> Palta Tomate Queso </label></li>
-             <li><label class="custom-control-label2" for="customSwitch3"> Almendra Carvajal  </label></li>
-             <li> <label class="custom-control-label3" for="customSwitch4"> Maria Sangueza</label></li>
+             <li><label class="custom-control-label" for="customSwitch1" style=""> Ada Lovelace </label></li>
+             <li><label class="custom-control-label1" for="customSwitch2" style=""> Palta Tomate Queso </label></li>
+             <li><label class="custom-control-label2" for="customSwitch3" style=""> Almendra Carvajal  </label></li>
+             <li> <label class="custom-control-label3" for="customSwitch4" style=""> Maria Sangueza</label></li>
             
             </ul>
-            
           </div>
         
          
        
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="split left">
+            <div class="centered">
+              <form action="../../form-result.php" target="_blank" style=" height: 450px; width: 600px;">
+
+                <fieldset>
+              
+                  <legend>Mensaje</legend>
+              
+                  <p><label>Tu nombre: <input type="text" name="nombre"></label></p>
+              
+                  <p><label>Tu dirección de correo: <input type="text" name="correo"></label></p>
+              
+                  <p>
+              
+                    <label>
+              
+                      Tu mensaje:<br>
+              
+                      <textarea name="mensaje"></textarea>
+              
+                    </label>
+              
+                  </p>
+              
+                </fieldset>
+              
+                <fieldset>
+              
+                  <legend>Nuevos temas</legend>
+              
+                  <p>
+              
+                    ¿Qué temas te gustaría que trate más en mi sitio?<br>
+              
+                    <label><input type="checkbox" name="html"> HTML</label>
+              
+                    <label><input type="checkbox" name="graficos"> Gráficos</label>
+              
+                    <label><input type="checkbox" name="videojuegos"> Videojuegos</label>
+              
+                    <label><input type="checkbox" name="arte"> Arte</label>
+              
+                    <label><input type="checkbox" name="musica"> Música</label>
+              
+                  </p>
+              
+                </fieldset>
+              
+                <p>
+              
+                  <input type="submit" value="Enviar mensaje">
+              
+                  <input type="reset" value="Comenzar de nuevo">
+              
+                </p>
+              
+              </form>
+            </div>
+          </div>
+          
+          <div class="split right">
+            <div class="centered">
+              <textarea cols="50" rows="5" style="overflow:scroll;">
+                Description of the project here....
+              </textarea>
+             <div class="col-md-6" >
+              <label for="custom-area" style=""><strong>Area del proyecto</strong></label>
+              <select class="custom-area" id="custom-area" required>
+               <option selected disabled value="" style="">Filtro por area</option>
+               <option>Contabilidad</option>
+               <option>Aprovicionamiento de redes</option>
+               <option>Arquitectura</option>
+               <option>Programacion</option>
+               <option>Logistica</option>
+               <option>Administracion</option>
+               <option>Otra</option>
+              </select>
+             
+             </div>
+            </div>
+            
+          </div>
    
     <button class="button1" type="submit">Crear Proyecto</button>
 

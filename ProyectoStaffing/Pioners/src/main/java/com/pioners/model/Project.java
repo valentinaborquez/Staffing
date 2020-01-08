@@ -8,7 +8,7 @@ public class Project {
     private  String dateFin;
     private long presupuesto;
     private String description;
-
+    private Object User;
     public Project() {
     }
 
