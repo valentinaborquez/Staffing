@@ -10,130 +10,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crear Proyecto-Adm</title>
-    
  </head>
- <body >
-   <ul class="nav nav-tabs bg-dark">
-    <li class="nav-item">
-        <a class="nav-link active"> Crear Proyecto</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/accesoadmin">Pagina Principal</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/agregarcolaborador">Agregar Colaborador</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/verproyectos">Ver proyectos</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/reportestaffing">Reporte de Staffing</a>
-    </li>  
-   </ul>
-   <br>
-   <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="nombre_Proyecto" ><strong>Nombre Proyecto</strong></label>
-      <input type="text" class="nombre_Proyecto" id="nombre_Proyecto" placeholder="Creacion frontend" value="" required>
-      <div class="valid-feedback">
-        Looks good!
+
+ <body>
+      <ul class="nav nav-tabs bg-dark">
+        <li class="nav-item">
+            <a class="nav-link active"> Crear Proyecto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/accesoadmin">Pagina Principal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/agregarcolaborador">Agregar Colaborador</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/verproyectos">Ver proyectos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/reportestaffing">Reporte de Staffing</a>
+        </li>  
+    </ul>
+    <div class="container">
+      <div class="form-row">
+          <div class="form-group col-md-4"> </div>
+          <div class="form-group col-md-5" style="color:lightseagreen">
+            <br>
+            <br>
+            <h2>      Registrar colaborador</h2>
+            <br>
+          </div>
+          <div class="form-group col-md-3"></div>
       </div>
-    </div>
-  
-   </div>
-   <div class="custom-control custom-switch">
-          <ul>
-              <label for="custom-control custom-switch" ><strong>Colab oradores segun area:</strong></label>
-              <input type="checkbox" class="custom-control-input" id="fullName">
-             <li><label class="custom-control-label" for="customSwitch1" > Ada Lovelace </label></li>
-             <li><label class="custom-control-label1" for="customSwitch2"> Palta Tomate Queso </label></li>
-             <li><label class="custom-control-label2" for="customSwitch3" > Almendra Carvajal  </label></li>
-             <li> <label class="custom-control-label3" for="customSwitch4"> Maria Sangueza</label></li>
-            
-            </ul>
-   </div>
-   <div class="split left">
-            <div class="centered">
-              <form action="../../form-result.php" target="_blank" style=" height: 450px; width: 600px;">
 
-                <fieldset>
-              
-                  <legend>Mensaje</legend>
-              
-                  <p><label>Tu nombre: <input type="text" name="nombre"></label></p>
-              
-                  <p><label>Tu dirección de correo: <input type="text" name="correo"></label></p>
-              
-                  <p>
-              
-                    <label>
-              
-                      Tu mensaje:<br>
-              
-                      <textarea name="mensaje"></textarea>
-              
-                    </label>
-              
-                  </p>
-              
-                </fieldset>
-              
-                <fieldset>
-              
-                  <legend>Nuevos temas</legend>
-              
-                  <p>
-              
-                    ¿Qué temas te gustaría que trate más en mi sitio?<br>
-              
-                    <label><input type="checkbox" name="html"> HTML</label>
-              
-                    <label><input type="checkbox" name="graficos"> Gráficos</label>
-              
-                    <label><input type="checkbox" name="videojuegos"> Videojuegos</label>
-              
-                    <label><input type="checkbox" name="arte"> Arte</label>
-              
-                    <label><input type="checkbox" name="musica"> Música</label>
-              
-                  </p>
-              
-                </fieldset>
-              
-                <p>
-              
-                  <input type="submit" value="Enviar mensaje">
-              
-                  <input type="reset" value="Comenzar de nuevo">
-              
-                </p>
-              
-              </form>
+      <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nombre" style="color: white;">Nombre Proyecto</label>
+              <input type="text" class="form-control" id="nombre">
             </div>
-   </div>
-   <div class="split right">
-     <div class="centered">
-              <textarea cols="50" rows="5" style="overflow:scroll;">
-                Description of the project here....
-              </textarea>
-             <div class="col-md-6" >
-              <label for="custom-area" ><strong>Area del proyecto</strong></label>
-              <select class="custom-area" id="custom-area" required>
-               <option selected disabled value="" >Filtro por area</option>
-               <option>Contabilidad</option>
-               <option>Aprovicionamiento de redes</option>
-               <option>Arquitectura</option>
-               <option>Programacion</option>
-               <option>Logistica</option>
-               <option>Administracion</option>
-               <option>Otra</option>
-              </select>
-             
-             </div>
-     </div>        
-   </div>
-   
-    <button class="button1" type="submit">Crear Proyecto</button>
+            <div class="form-group col-md-6">
+              <label for="nombre" style="color: white;">Fecha inicio</label>
+              <input type="text" class="form-control" id="nombre">
+              <label for="nombre" style="color: white;">Fecha final</label>
+              <input type="text" class="form-control" id="nombre">
+            </div>
+           
+          </div>
+          <div>
+            <label for="nombre" style="color: white;">Descripcion del proyecto</label>
+            <textarea cols="50" rows="5" style="overflow:scroll;">
+              Description of the project here....
+            </textarea>
 
+          </div>
+          
+
+          <div class="form-row">
+              <div class="form-group col-md-4">
+                  
+                      <label for="inlineFormCustomSelect" style="color: white;">Rol</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Selecciona...</option>
+                        <option value="colaborador">Colaborador</option>
+                        <option value="administrador">Administrador</option> 
+                      </select>
+                    
+              </div>     
+          </div>
+          <button type="button" class="btn btn-outline-info">Crear perfil colaborador</button>
+      </form>
+    </div>
  </body>
 </html>
+
+
+
+
+
+
+
+
+  
+
+
