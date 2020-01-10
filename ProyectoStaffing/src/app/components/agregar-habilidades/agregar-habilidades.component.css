@@ -1,13 +1,18 @@
 body {
-    background-color: black;
+    background-image:url("/assets/img/pastel.jpg");
     height: 100vh;
     width: 100%;
        
 }
 
 .nav-link{
-    color:lightseagreen;
+    color:indigo
 }
+
+.fondo{
+    background-color: rgb(217, 235, 235)
+}
+
 
 
 
